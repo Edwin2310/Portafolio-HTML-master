@@ -1,123 +1,139 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-	font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .lateral {
-	background-color: #56B3AB;
-	bottom: 0;
-	left: 0;
-	padding: 1em;
-	position: fixed;
-	top: 0;
-	width: 350px;
+  background-color: #747373;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 350px;
 }
 
 /* Perfil */
 
 .perfil__circulo {
-	border-radius: 50%;
-	height: 50px;
-	overflow: hidden;
-	margin: 0;
-	width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  overflow: hidden;
+  margin: 0;
+  width: 50px;
 }
 
 .perfil__foto {
-	width: 100%;
+  width: 100%;
 }
 
-.img{
-	height: 50px;
-	width: 50px;
-
+.img {
+  height: 50px;
+  width: 50px;
 }
 .perfil__nombres {
-	color: #fff;
-	font-size: 20px;
-	margin-left: .5em;
-	width: 250px;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 0.5em;
+  width: 250px;
 }
 
-.perfil__nombres, .perfil__circulo {
-	display: inline-block;
-	vertical-align: middle;
+.perfil__nombres,
+.perfil__circulo {
+  display: inline-block;
+  vertical-align: middle;
 }
-
 
 /* Contacto */
 
-.contacto{
-	text-align: center;
+.contacto {
+  text-align: center;
 }
 
 .informacion__contacto {
-	font-size: 15px;
+  font-size: 15px;
 }
 
 /* Información */
 
 .informacion {
-	text-align: center;
-	color: #0F6A62;
-	position: relative;
-	bottom: 1em;
+  text-align: center;
+  color: black;
+  position: relative;
+  bottom: 1em;
 }
 
 .informacion__titulo {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 /* Habilidades */
 .habilidades {
-	padding: 0;
+  padding: 0;
 }
 
 .habilidad {
-	background-color: #0F6A62;
-	color: #fff;
-	display: inline-block;
-	font-size: 12px;
-	text-transform: uppercase;
-	padding: .5em;
+  background-color: #000000;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0.5em;
 }
 
 .habilidad--proyecto {
-	background-color: #29597C;
-	color: #fff;
-	display: inline-block;
-	font-size: 12px;
-	text-transform: uppercase;
-	padding: .5em;
+  background-color: #29597c;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0.5em;
 }
 
 /* Proyectos */
 
 .proyectos {
-	margin-left: 350px;
-	padding: 1em;
+  margin-left: 350px;
+  padding: 1em;
 
-	display: table;
+  display: table;
 }
 
 .proyecto {
-	display: table-cell;
-	padding: 1em;
-	width: 50%;
+  display: table-cell;
+  padding: 1em;
+  width: 50%;
 }
 
 .proyecto__imagen {
-	width: 100%;
+  width: 100%;
 }
 
 .proyecto__titulo {
-	color: #29597C;
-	font-size: 18px;
+  color: #29597c;
+  font-size: 18px;
 }
 
 .proyecto__descripcion {
-	color: #797D7F;
+  color: #797d7f;
+}
+/* sustituye tu regla anterior de .proyecto__imagen por esta */
+.proyecto__imagen {
+  display: block; /* para que margin auto funcione */
+  width: 80%; /* ocupa el 80% del ancho del .proyecto */
+  max-width: 400px; /* tope de tamaño en pantallas grandes */
+  height: auto; /* mantiene proporción */
+  margin: 0 auto 1rem; /* centra horizontalmente y separa del texto */
+  object-fit: cover; /* recorta si cambias proporción */
+  border-radius: 4px; /* opcional: esquinas suaves */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-proyecto {
+  max-width: 800px; /* ancho máximo deseado */
+  margin: 0 auto; /* lo centra en la pantalla */
+  padding: 1rem; /* espacio interior opcional */
 }
