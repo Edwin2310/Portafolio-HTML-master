@@ -131,72 +131,104 @@ html {
 
 .proyectos .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.2rem;
-  margin: 1.5rem 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  width: 100%;
+  justify-items: center;
+}
+
+@media (max-width: 1100px) {
+  .proyectos .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .proyectos .row {
+    grid-template-columns: 1fr;
+  }
 }
 
 .proyecto {
-  background: var(--color-card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 1.2rem 1rem;
-  margin-top: 0;
-  margin-bottom: 1.2rem;
+  background: var(--color-card, #fff);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: box-shadow var(--transition), background var(--transition);
-  gap: 0.7rem;
-}
-
-body.dark-mode .proyecto {
-  background: var(--color-card-dark);
-}
-
-.proyecto:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+  transition: box-shadow 0.3s, background 0.3s;
+  min-height: 420px;
+  max-width: 370px;
+  width: 100%;
 }
 
 .proyecto__imagen {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto 1rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.12);
   object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
+  background: #fff;
+  display: block;
 }
 
 .proyecto__titulo {
-  color: var(--color-primary);
-  font-size: 1.2rem;
+  color: var(--color-primary, #2e86de);
+  font-size: 1.3rem;
   margin: 0.5rem 0 1rem 0;
   text-align: center;
 }
 
 .proyecto__descripcion {
   font-size: 1rem;
-  margin-bottom: 1rem;
-  color: var(--color-text);
-  text-align: left;
+  margin-bottom: 1.2rem;
+  color: var(--color-text, #222f3e);
+  text-align: center;
+  min-height: 70px;
 }
 
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin: 0.5rem 0 0 0;
+}
+
+.habilidad--proyecto {
+  background: var(--color-accent, #00b894);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.3rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(0, 184, 148, 0.10);
+  transition: background 0.3s, color 0.3s;
+}
+
+.habilidad--proyecto:hover {
+  background: var(--color-primary, #2e86de);
+  color: #fff;
+}
+
+/* Modo oscuro para tarjetas */
+body.dark-mode .proyecto {
+  background: #23272f;
+  color: #fff;
+}
 body.dark-mode .proyecto__descripcion {
-  color: var(--color-text-light);
+  color: #fff;
 }
-
-.contenedor-proyecto {
-  max-width: 800px; /* ancho máximo deseado */
-  margin: 0 auto; /* lo centra en la pantalla */
-  padding: 1rem; /* espacio interior opcional */
+body.dark-mode .proyecto__imagen {
+  background: #23272f;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.40);
+  border: 1.5px solid #444;
 }
-
 :root {
   --color-bg: #f5f6fa;
   --color-bg-dark: #23272f;
@@ -250,6 +282,5 @@ body.dark-mode .proyecto__imagen {
 
 /* Layout principal para alinear lateral y proyectos */
 .main-layout {
-  display: flex;
-  align-items: flex-start;
+  width: 100%;
 }
