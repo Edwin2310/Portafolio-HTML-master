@@ -7,225 +7,116 @@
     <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
 
-    <link
-      href="http://fonts.googleapis.com/css?family=Lato:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section class="lateral">
-      <div class="perfil">
-        <figure class="perfil__circulo">
-          <img src="img/perfil.jpg" alt="" class="perfil__foto" />
-        </figure>
-        <h1 class="perfil__nombres">Edwin Aron Martinez Cabrera</h1>
-      </div>
+    <button id="darkModeToggle" style="position:fixed;top:1rem;right:1rem;z-index:999;border:none;background:var(--color-primary);color:#fff;padding:0.7rem 1.2rem;border-radius:var(--radius);cursor:pointer;box-shadow:0 2px 8px rgba(44,62,80,0.12);font-weight:700;transition:background 0.3s;">🌙 Modo Oscuro</button>
+    <div class="main-layout">
+      <section class="lateral">
+        <div class="perfil">
+          <figure class="perfil__circulo">
+            <img src="img/perfil.jpg" alt="" class="perfil__foto" />
+          </figure>
+          <h1 class="perfil__nombres">Edwin Aron Martinez Cabrera</h1>
+        </div>
 
-      <div class="contacto">
-        <b><h3>Información Personal</h3></b>
-        <figure class="perfil__circulo">
-          <img src="img/telefono.png" alt="" class="perfil__foto" />
-        </figure>
-        <h1 class="informacion__contacto">(504)-9645-4635</h1>
+        <div class="contacto">
+          <b><h3>Información Personal</h3></b>
+          <figure class="perfil__circulo">
+            <img src="img/telefono.png" alt="" class="perfil__foto" />
+          </figure>
+          <h1 class="informacion__contacto">(504)-9645-4635</h1>
 
-        <figure class="perfil__circulo">
-          <img src="img/correo.png" alt="" class="perfil__foto" />
-        </figure>
-        <h1 class="informacion__contacto">aron.martinez@unah.hn</h1>
+          <figure class="perfil__circulo">
+            <img src="img/correo.png" alt="" class="perfil__foto" />
+          </figure>
+          <h1 class="informacion__contacto">aron.martinez@unah.hn</h1>
 
-        <figure class="perfil__circulo">
-          <img src="img/edad.png" alt="" class="perfil__foto" />
-        </figure>
-        <h1 class="informacion__contacto">Edad: 25</h1>
+          <figure class="perfil__circulo">
+            <img src="img/edad.png" alt="" class="perfil__foto" />
+          </figure>
+          <h1 class="informacion__contacto">Edad: 25</h1>
 
-        <figure class="perfil__circulo">
-          <img src="img/casa.png" alt="" class="perfil__foto" />
-        </figure>
-        <h1 class="informacion__contacto">
-          Col.Centro América, bloque C, Casa 1343, zona 4.
-        </h1>
-      </div>
+          <figure class="perfil__circulo">
+            <img src="img/casa.png" alt="" class="perfil__foto" />
+          </figure>
+          <h1 class="informacion__contacto">
+            Col.Centro América, bloque C, Casa 1343, zona 4.
+          </h1>
+        </div>
 
-      <div class="informacion">
-        <br />
-        <h2 class="informacion__titulo">Lic.Informática Administrativa</h2>
-        <ul class="habilidades">
-          <li class="habilidad">Html</li>
-          <li class="habilidad">Css</li>
-          <li class="habilidad">Java</li>
-          <li class="habilidad">Php</li>
-          <li class="habilidad">Js</li>
-          <li class="habilidad">Mysql</li>
-          <li class="habilidad">Linux</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="proyectos">
-      <div class="row">
-        <article class="proyecto">
-          <img src="img/cafe.gif" alt="" class="proyecto__imagen" />
-          <h3 class="proyecto__titulo">Blog De Café</h3>
-          <p class="proyecto__descripcion">
-            <li style="list-style-type: none; margin-left: 0">
-              Blog de café con consejos y cursos en donde se muestra la
-              información de cada producto detallada y una navegación simple y
-              resumida sobre lo que pueda necesitar un blog.
-            </li>
-          </p>
-
+        <div class="informacion">
+          <br />
+          <h2 class="informacion__titulo">Lic.Informática Administrativa</h2>
           <ul class="habilidades">
-            <li class="habilidad--proyecto">Html 5</li>
-            <li class="habilidad--proyecto">Css 3</li>
-            <li class="habilidad--proyecto">Js</li>
-            <li class="habilidad--proyecto">Mysql</li>
+            <li class="habilidad">Html</li>
+            <li class="habilidad">Css</li>
+            <li class="habilidad">Java</li>
+            <li class="habilidad">Php</li>
+            <li class="habilidad">Js</li>
+            <li class="habilidad">Mysql</li>
+            <li class="habilidad">Linux</li>
           </ul>
-        </article>
+        </div>
+      </section>
 
-        <article class="proyecto">
-          <img src="img/rock.gif" alt="" class="proyecto__imagen" />
-          <h3 class="proyecto__titulo">Festival de Rock & EDM</h3>
-          <p class="proyecto__descripcion">
-            <li style="list-style-type: none; margin-left: 0">
-              Blog acerca de un festival de Rock & EDM con una navegador
-              dinamico el cual nos lleva a la sección dependiendo a donde le
-              damos click, también tenemos la sección donde se muestran los
-              horarios de los conciertos, con una Galeria creada con JS con la
-              opción de interactuar con ellas y por ultimo la información de los
-              Boletos
-            </li>
-          </p>
+      <section class="proyectos">
+        <div class="row">
+          <article class="proyecto">
+            <img src="img/cafe.gif" alt="" class="proyecto__imagen" />
+            <h3 class="proyecto__titulo">Blog De Café</h3>
+            <p class="proyecto__descripcion">
+              <li style="list-style-type: none; margin-left: 0">
+                Blog de café con consejos y cursos en donde se muestra la
+                información de cada producto detallada y una navegación simple y
+                resumida sobre lo que pueda necesitar un blog.
+              </li>
+            </p>
 
-          <ul class="habilidades">
-            <li class="habilidad--proyecto">Html 5</li>
-            <li class="habilidad--proyecto">Css 3</li>
-            <li class="habilidad--proyecto">Scss</li>
-            <li class="habilidad--proyecto">Gulpfile</li>
-            <li class="habilidad--proyecto">Js</li>
-          </ul>
-        </article>
-      </div>
+            <ul class="habilidades">
+              <li class="habilidad--proyecto">Html 5</li>
+              <li class="habilidad--proyecto">Css 3</li>
+              <li class="habilidad--proyecto">Js</li>
+              <li class="habilidad--proyecto">Mysql</li>
+            </ul>
+          </article>
 
-      <div class="row">
-        <article class="proyecto">
-          <img src="img/bienes.gif" alt="" class="proyecto__imagen" />
-          <h3 class="proyecto__titulo">Bienes Raices</h3>
-          <p class="proyecto__descripcion">
-            <li style="list-style-type: none; margin-left: 0">
-              Proyecto creado para mostrar las diferentes casas con las que se
-              cuenta, en donde tenemos un CRUD para presentar las viviendas que
-              deseamos vender y manejar con mas detalles, y una navegación
-              básica sobre lo que pueda necesitar un blog.
-            </li>
-          </p>
+          <article class="proyecto">
+            <img src="img/rock.gif" alt="" class="proyecto__imagen" />
+            <h3 class="proyecto__titulo">Festival de Rock & EDM</h3>
+            <p class="proyecto__descripcion">
+              <li style="list-style-type: none; margin-left: 0">
+                Blog acerca de un festival de Rock & EDM con una navegador
+                dinamico el cual nos lleva a la sección dependiendo a donde le
+                damos click, también tenemos la sección donde se muestran los
+                horarios de los conciertos, con una Galeria creada con JS con la
+                opción de interactuar con ellas y por ultimo la información de los
+                Boletos
+              </li>
+            </p>
 
-          <ul class="habilidades">
-            <li class="habilidad--proyecto">Html 5</li>
-            <li class="habilidad--proyecto">Css 3</li>
-            <li class="habilidad--proyecto">Php</li>
-            <li class="habilidad--proyecto">Js</li>
-            <li class="habilidad--proyecto">Mysql</li>
-            <li class="habilidad--proyecto">Scss</li>
-            <li class="habilidad--proyecto">Gulpfile</li>
-            <li class="habilidad--proyecto">Poo</li>
-          </ul>
-        </article>
-
-        <article class="proyecto">
-          <img src="img/appsalon.gif" alt="" class="proyecto__imagen" />
-          <h3 class="proyecto__titulo">App Salón</h3>
-          <p class="proyecto__descripcion">
-            <li style="list-style-type: none; margin-left: 0">
-              Proyecto de citas creado para implementarlo en una barberia o
-              salón de belleza, está basado como MVC , en donde el administrador
-              puede crear,actualizar,insertar y borrar los servicios y el
-              usuario organizar sus citas. También se puede crear una cuenta
-              desde el Login y Recuperar la Contraseña.
-            </li>
-          </p>
-
-          <ul class="habilidades">
-            <li class="habilidad--proyecto">Html 5</li>
-            <li class="habilidad--proyecto">Css 3</li>
-            <li class="habilidad--proyecto">Php</li>
-            <li class="habilidad--proyecto">Js</li>
-            <li class="habilidad--proyecto">Mysql</li>
-            <li class="habilidad--proyecto">Scss</li>
-            <li class="habilidad--proyecto">Ajax</li>
-            <li class="habilidad--proyecto">MVC</li>
-            <li class="habilidad--proyecto">Api Rest</li>
-          </ul>
-        </article>
+            <ul class="habilidades">
+              <li class="habilidad--proyecto">Html 5</li>
+              <li class="habilidad--proyecto">Css 3</li>
+              <li class="habilidad--proyecto">Scss</li>
+              <li class="habilidad--proyecto">Gulpfile</li>
+              <li class="habilidad--proyecto">Js</li>
+            </ul>
+          </article>
+        </div>
 
         <div class="row">
           <article class="proyecto">
-            <img src="img/helpdesk.gif" alt="" class="proyecto__imagen" />
-            <h3 class="proyecto__titulo">Helpdesk (Soporte Técnico)</h3>
+            <img src="img/bienes.gif" alt="" class="proyecto__imagen" />
+            <h3 class="proyecto__titulo">Bienes Raices</h3>
             <p class="proyecto__descripcion">
               <li style="list-style-type: none; margin-left: 0">
-                Este proyecto es un sistema de Helpdesk para gestionar las
-                solicitudes (tickets) de los usuarios de forma ordenada y
-                eficiente: los usuarios crean tickets, el administrador los
-                asigna al personal disponible y todo queda registrado para
-                evitar acumulación de trabajo.
+                Proyecto creado para mostrar las diferentes casas con las que se
+                cuenta, en donde tenemos un CRUD para presentar las viviendas que
+                deseamos vender y manejar con mas detalles, y una navegación
+                básica sobre lo que pueda necesitar un blog.
               </li>
             </p>
-
-            <ol class="proyecto__lista">
-              <li>
-                <strong>Nuevo Ticket:</strong> formulario para registrar un
-                incidente con selección de tipo de problema, descripción y
-                generación de ID único.
-              </li>
-              <li>
-                <strong>Comprobar Estado:</strong> consulta introduciendo correo
-                e ID para ver el estado actual del ticket.
-              </li>
-              <li>
-                <strong>Calendario:</strong> control de fechas y tiempos según
-                las asignaciones.
-              </li>
-              <li>
-                <strong>Administrar Tickets:</strong> vista de todos los tickets
-                filtrados por estado (Pendientes, En Proceso, Resueltos,
-                Rechazados).
-              </li>
-              <li>
-                <strong>Consultar Ticket:</strong> interfaz para responder y
-                cambiar el estado de un ticket.
-              </li>
-              <li>
-                <strong>Dictamen:</strong> sección para que el administrador
-                suba archivos en formato Word.
-              </li>
-              <li>
-                <strong>Informe Técnico:</strong> creación de un dictamen cuando
-                un dispositivo está dañado, con opción de insertar hasta 3
-                imágenes como anexos.
-              </li>
-              <li>
-                <strong>Entrada/Salida de Equipo:</strong> registro del trabajo
-                de los técnicos y obtención de estadísticas de las fallas más
-                frecuentes.
-              </li>
-              <li>
-                <strong>Bitácora:</strong> formulario en el que los técnicos
-                documentan soluciones para referencia de otros.
-              </li>
-              <li>
-                <strong>Gestión de Usuarios:</strong> alta de usuarios y
-                administradores mediante código de empleado.
-              </li>
-              <li>
-                <strong>Panel de Usuarios:</strong> editar datos, cambiar
-                estado, restablecer contraseña y eliminar usuarios.
-              </li>
-              <li>
-                <strong>Notificaciones por Correo:</strong> envío automático de
-                emails al usuario y al administrador de Helpdesk.
-              </li>
-            </ol>
 
             <ul class="habilidades">
               <li class="habilidad--proyecto">Html 5</li>
@@ -233,51 +124,24 @@
               <li class="habilidad--proyecto">Php</li>
               <li class="habilidad--proyecto">Js</li>
               <li class="habilidad--proyecto">Mysql</li>
-              <li class="habilidad--proyecto">Ajax</li>
-              <li class="habilidad--proyecto">PHPMailer</li>
-              <li class="habilidad--proyecto">Reporteria(Excel,Pdf)</li>
+              <li class="habilidad--proyecto">Scss</li>
+              <li class="habilidad--proyecto">Gulpfile</li>
+              <li class="habilidad--proyecto">Poo</li>
             </ul>
           </article>
 
           <article class="proyecto">
-            <img src="img/sigem.gif" alt="" class="proyecto__imagen" />
-            <h3 class="proyecto__titulo">
-              Proyecto Nuevo SIGEM (Sistema de Tickets para el SNE-911)
-            </h3>
+            <img src="img/appsalon.gif" alt="" class="proyecto__imagen" />
+            <h3 class="proyecto__titulo">App Salón</h3>
             <p class="proyecto__descripcion">
               <li style="list-style-type: none; margin-left: 0">
-                Sistema de gestión de emergencias 911: el ciudadano llama, el
-                operador crea el ticket, el despacho coordina la ayuda y el
-                supervisor lo cierra.
+                Proyecto de citas creado para implementarlo en una barberia o
+                salón de belleza, está basado como MVC , en donde el administrador
+                puede crear,actualizar,insertar y borrar los servicios y el
+                usuario organizar sus citas. También se puede crear una cuenta
+                desde el Login y Recuperar la Contraseña.
               </li>
             </p>
-
-            <ol class="proyecto__lista">
-              <li>
-                <strong>Login por rol:</strong> acceso para Administrador,
-                Supervisor y Despacho.
-              </li>
-              <li>
-                <strong>Dashboard:</strong> métricas y gráficos de tickets
-                (totales, abiertos, cerrados).
-              </li>
-              <li>
-                <strong>Gestión de tickets:</strong> creación, consulta y
-                filtrado de incidencias.
-              </li>
-              <li>
-                <strong>Detalle de ticket:</strong> visualización de datos
-                específicos y chat con despacho o supervisor.
-              </li>
-              <li>
-                <strong>Notificaciones:</strong> vista de tickets asignados a
-                cada despacho.
-              </li>
-              <li>
-                <strong>Perfil y sesión:</strong> cambio de contraseña y cierre
-                de sesión.
-              </li>
-            </ol>
 
             <ul class="habilidades">
               <li class="habilidad--proyecto">Html 5</li>
@@ -285,80 +149,221 @@
               <li class="habilidad--proyecto">Php</li>
               <li class="habilidad--proyecto">Js</li>
               <li class="habilidad--proyecto">Mysql</li>
+              <li class="habilidad--proyecto">Scss</li>
               <li class="habilidad--proyecto">Ajax</li>
               <li class="habilidad--proyecto">MVC</li>
-              <li class="habilidad--proyecto">Reporteria(Excel,Pdf)</li>
+              <li class="habilidad--proyecto">Api Rest</li>
             </ul>
           </article>
-        </div>
-        <div class="contenedor-proyecto">
-          <article class="proyecto">
-            <img
-              src="img/sigaes.gif"
-              alt=""
-              class="proyecto__imagen img-fluid"
-            />
-            <h3 class="proyecto__titulo">
-              SIGAES (Sistema de Gestión Académica en la Educación Superior)
-            </h3>
-            <p class="proyecto__descripcion">
-              <li style="list-style-type: none; margin-left: 0">
-                Sistema integral para soportar procesos administrativos,
-                seguridad, reportería, bitácora, mantenimiento, gestión y
-                consulta de solicitudes, y análisis curricular en la Educación
-                Superior departamento de la UNAH.
-              </li>
-            </p>
 
-            <ol class="proyecto__lista">
-              <li>
-                <strong>Procesos Generales:</strong> gestión de solicitudes,
-                admisión, actas y agendas.
-              </li>
-              <li>
-                <strong>Seguridad:</strong> autenticación, control de acceso,
-                gestión de sesiones y respaldo de datos.
-              </li>
-              <li>
-                <strong>Reportería:</strong> generación y exportación de
-                informes configurables (PDF, Excel, CSV).
-              </li>
-              <li>
-                <strong>Bitácora:</strong> registro de eventos, seguimiento de
-                modificaciones y control de logs.
-              </li>
-              <li>
-                <strong>Mantenimiento:</strong> administración de catálogos,
-                usuarios, roles y permisos.
-              </li>
-              <li>
-                <strong>Solicitudes:</strong> registro, seguimiento, revisión
-                documental y cierre de trámites.
-              </li>
-              <li>
-                <strong>Consulta de Solicitudes:</strong> búsqueda avanzada,
-                historial, exportación de consultas y estadísticas.
-              </li>
-              <li>
-                <strong>Análisis Curricular:</strong> revisión de planes de
-                estudio, dictamen académico y generación de resoluciones.
-              </li>
-            </ol>
+          <div class="row">
+            <article class="proyecto">
+              <img src="img/helpdesk.gif" alt="" class="proyecto__imagen" />
+              <h3 class="proyecto__titulo">Helpdesk (Soporte Técnico)</h3>
+              <p class="proyecto__descripcion">
+                <li style="list-style-type: none; margin-left: 0">
+                  Este proyecto es un sistema de Helpdesk para gestionar las
+                  solicitudes (tickets) de los usuarios de forma ordenada y
+                  eficiente: los usuarios crean tickets, el administrador los
+                  asigna al personal disponible y todo queda registrado para
+                  evitar acumulación de trabajo.
+                </li>
+              </p>
 
-            <ul class="habilidades">
-              <li class="habilidad--proyecto">Html 5</li>
-              <li class="habilidad--proyecto">Css 3</li>
-              <li class="habilidad--proyecto">Bootstrap</li>
-              <li class="habilidad--proyecto">Php</li>
-              <li class="habilidad--proyecto">Js</li>
-              <li class="habilidad--proyecto">Mysql</li>
-              <li class="habilidad--proyecto">Ajax</li>
-              <li class="habilidad--proyecto">MVC</li>
-              <li class="habilidad--proyecto">Reporteria(Excel,Pdf)</li>
-            </ul>
-          </article>
+              <ol class="proyecto__lista">
+                <li>
+                  <strong>Nuevo Ticket:</strong> formulario para registrar un
+                  incidente con selección de tipo de problema, descripción y
+                  generación de ID único.
+                </li>
+                <li>
+                  <strong>Comprobar Estado:</strong> consulta introduciendo correo
+                  e ID para ver el estado actual del ticket.
+                </li>
+                <li>
+                  <strong>Calendario:</strong> control de fechas y tiempos según
+                  las asignaciones.
+                </li>
+                <li>
+                  <strong>Administrar Tickets:</strong> vista de todos los tickets
+                  filtrados por estado (Pendientes, En Proceso, Resueltos,
+                  Rechazados).
+                </li>
+                <li>
+                  <strong>Consultar Ticket:</strong> interfaz para responder y
+                  cambiar el estado de un ticket.
+                </li>
+                <li>
+                  <strong>Dictamen:</strong> sección para que el administrador
+                  suba archivos en formato Word.
+                </li>
+                <li>
+                  <strong>Informe Técnico:</strong> creación de un dictamen cuando
+                  un dispositivo está dañado, con opción de insertar hasta 3
+                  imágenes como anexos.
+                </li>
+                <li>
+                  <strong>Entrada/Salida de Equipo:</strong> registro del trabajo
+                  de los técnicos y obtención de estadísticas de las fallas más
+                  frecuentes.
+                </li>
+                <li>
+                  <strong>Bitácora:</strong> formulario en el que los técnicos
+                  documentan soluciones para referencia de otros.
+                </li>
+                <li>
+                  <strong>Gestión de Usuarios:</strong> alta de usuarios y
+                  administradores mediante código de empleado.
+                </li>
+                <li>
+                  <strong>Panel de Usuarios:</strong> editar datos, cambiar
+                  estado, restablecer contraseña y eliminar usuarios.
+                </li>
+                <li>
+                  <strong>Notificaciones por Correo:</strong> envío automático de
+                  emails al usuario y al administrador de Helpdesk.
+                </li>
+              </ol>
+
+              <ul class="habilidades">
+                <li class="habilidad--proyecto">Html 5</li>
+                <li class="habilidad--proyecto">Css 3</li>
+                <li class="habilidad--proyecto">Php</li>
+                <li class="habilidad--proyecto">Js</li>
+                <li class="habilidad--proyecto">Mysql</li>
+                <li class="habilidad--proyecto">Ajax</li>
+                <li class="habilidad--proyecto">PHPMailer</li>
+                <li class="habilidad--proyecto">Reporteria(Excel,Pdf)</li>
+              </ul>
+            </article>
+
+            <article class="proyecto">
+              <img src="img/sigem.gif" alt="" class="proyecto__imagen" />
+              <h3 class="proyecto__titulo">
+                Proyecto Nuevo SIGEM (Sistema de Tickets para el SNE-911)
+              </h3>
+              <p class="proyecto__descripcion">
+                <li style="list-style-type: none; margin-left: 0">
+                  Sistema de gestión de emergencias 911: el ciudadano llama, el
+                  operador crea el ticket, el despacho coordina la ayuda y el
+                  supervisor lo cierra.
+                </li>
+              </p>
+
+              <ol class="proyecto__lista">
+                <li>
+                  <strong>Login por rol:</strong> acceso para Administrador,
+                  Supervisor y Despacho.
+                </li>
+                <li>
+                  <strong>Dashboard:</strong> métricas y gráficos de tickets
+                  (totales, abiertos, cerrados).
+                </li>
+                <li>
+                  <strong>Gestión de tickets:</strong> creación, consulta y
+                  filtrado de incidencias.
+                </li>
+                <li>
+                  <strong>Detalle de ticket:</strong> visualización de datos
+                  específicos y chat con despacho o supervisor.
+                </li>
+                <li>
+                  <strong>Notificaciones:</strong> vista de tickets asignados a
+                  cada despacho.
+                </li>
+                <li>
+                  <strong>Perfil y sesión:</strong> cambio de contraseña y cierre
+                  de sesión.
+                </li>
+              </ol>
+
+              <ul class="habilidades">
+                <li class="habilidad--proyecto">Html 5</li>
+                <li class="habilidad--proyecto">Css 3</li>
+                <li class="habilidad--proyecto">Php</li>
+                <li class="habilidad--proyecto">Js</li>
+                <li class="habilidad--proyecto">Mysql</li>
+                <li class="habilidad--proyecto">Ajax</li>
+                <li class="habilidad--proyecto">MVC</li>
+                <li class="habilidad--proyecto">Reporteria(Excel,Pdf)</li>
+              </ul>
+            </article>
+          </div>
+          <div class="contenedor-proyecto">
+            <article class="proyecto">
+              <img
+                src="img/sigaes.gif"
+                alt=""
+                class="proyecto__imagen img-fluid"
+              />
+              <h3 class="proyecto__titulo">
+                SIGAES (Sistema de Gestión Académica en la Educación Superior)
+              </h3>
+              <p class="proyecto__descripcion">
+                <li style="list-style-type: none; margin-left: 0">
+                  Sistema integral para soportar procesos administrativos,
+                  seguridad, reportería, bitácora, mantenimiento, gestión y
+                  consulta de solicitudes, y análisis curricular en la Educación
+                  Superior departamento de la UNAH.
+                </li>
+              </p>
+
+              <ol class="proyecto__lista">
+                <li>
+                  <strong>Procesos Generales:</strong> gestión de solicitudes,
+                  admisión, actas y agendas.
+                </li>
+                <li>
+                  <strong>Seguridad:</strong> autenticación, control de acceso,
+                  gestión de sesiones y respaldo de datos.
+                </li>
+                <li>
+                  <strong>Reportería:</strong> generación y exportación de
+                  informes configurables (PDF, Excel, CSV).
+                </li>
+                <li>
+                  <strong>Bitácora:</strong> registro de eventos, seguimiento de
+                  modificaciones y control de logs.
+                </li>
+                <li>
+                  <strong>Mantenimiento:</strong> administración de catálogos,
+                  usuarios, roles y permisos.
+                </li>
+                <li>
+                  <strong>Solicitudes:</strong> registro, seguimiento, revisión
+                  documental y cierre de trámites.
+                </li>
+                <li>
+                  <strong>Consulta de Solicitudes:</strong> búsqueda avanzada,
+                  historial, exportación de consultas y estadísticas.avanzada.
+                </li>
+                <li>
+                  <strong>Análisis Curricular:</strong> revisión de planes de
+                  estudio, dictamen académico y generación de resoluciones.
+                </li>
+              </ol>
+              <ul class="habilidades">
+                <li class="habilidad--proyecto">Html 5</li>
+                <li class="habilidad--proyecto">Css 3</li>
+                <li class="habilidad--proyecto">Bootstrap</li>
+                <li class="habilidad--proyecto">Php</li>
+                <li class="habilidad--proyecto">Js</li>
+                <li class="habilidad--proyecto">Mysql</li>
+                <li class="habilidad--proyecto">Ajax</li>
+                <li class="habilidad--proyecto">MVC</li>
+                <li class="habilidad--proyecto">Reporteria(Excel,Pdf)</li>
+              </ul>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    <script>
+  const btn = document.getElementById('darkModeToggle');
+  btn.onclick = () => {
+    document.body.classList.toggle('dark-mode');
+    btn.textContent = document.body.classList.contains('dark-mode') ? '☀️ Modo Claro' : '🌙 Modo Oscuro';
+  };
+</script>
   </body>
 </html>

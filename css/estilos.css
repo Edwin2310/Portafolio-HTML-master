@@ -7,27 +7,38 @@ html {
 }
 
 .lateral {
-  background-color: #747373;
-  bottom: 0;
-  left: 0;
-  padding: 1em;
-  position: fixed;
-  top: 0;
-  width: 350px;
+  max-width: 320px;
+  margin: 2rem 1rem 2rem 2rem;
+  padding: 1.5rem 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: var(--color-card);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 /* Perfil */
 
 .perfil__circulo {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  height: 50px;
   overflow: hidden;
-  margin: 0;
-  width: 50px;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.12);
 }
 
 .perfil__foto {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
 }
 
 .img {
@@ -35,16 +46,24 @@ html {
   width: 50px;
 }
 .perfil__nombres {
-  color: #fff;
-  font-size: 18px;
-  margin-left: 0.5em;
-  width: 250px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
 }
 
 .perfil__nombres,
 .perfil__circulo {
   display: inline-block;
   vertical-align: middle;
+}
+
+/* Centra la imagen de perfil */
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Contacto */
@@ -72,68 +91,165 @@ html {
 
 /* Habilidades */
 .habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
   padding: 0;
+  list-style: none;
+  margin: 0.5rem 0 0 0;
 }
 
-.habilidad {
-  background-color: #000000;
-  color: #fff;
-  display: inline-block;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 0.5em;
+.habilidad, .habilidad--proyecto {
+  background: var(--color-secondary);
+  color: #222;
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(241, 196, 15, 0.10);
+  transition: background var(--transition), color var(--transition);
 }
 
 .habilidad--proyecto {
-  background-color: #29597c;
+  background: var(--color-accent);
   color: #fff;
-  display: inline-block;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 0.5em;
+}
+
+.habilidad--proyecto:hover {
+  background: var(--color-primary);
+  color: #fff;
 }
 
 /* Proyectos */
 
 .proyectos {
-  margin-left: 350px;
-  padding: 1em;
+  margin-left: 0;
+  margin-top: 2rem;   /* reduce el espacio superior */
+  padding: 0 1.5rem;
+  width: 100%;      /* Asegura que ocupe todo el ancho disponible */
+}
 
-  display: table;
+.proyectos .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
 }
 
 .proyecto {
-  display: table-cell;
-  padding: 1em;
-  width: 50%;
+  background: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.2rem 1rem;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow var(--transition), background var(--transition);
+  gap: 0.7rem;
+}
+
+body.dark-mode .proyecto {
+  background: var(--color-card-dark);
+}
+
+.proyecto:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
 }
 
 .proyecto__imagen {
-  width: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.12);
+  object-fit: cover;
 }
 
 .proyecto__titulo {
-  color: #29597c;
-  font-size: 18px;
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin: 0.5rem 0 1rem 0;
+  text-align: center;
 }
 
 .proyecto__descripcion {
-  color: #797d7f;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+  text-align: left;
 }
-/* sustituye tu regla anterior de .proyecto__imagen por esta */
-.proyecto__imagen {
-  display: block; /* para que margin auto funcione */
-  width: 80%; /* ocupa el 80% del ancho del .proyecto */
-  max-width: 400px; /* tope de tamaño en pantallas grandes */
-  height: auto; /* mantiene proporción */
-  margin: 0 auto 1rem; /* centra horizontalmente y separa del texto */
-  object-fit: cover; /* recorta si cambias proporción */
-  border-radius: 4px; /* opcional: esquinas suaves */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+body.dark-mode .proyecto__descripcion {
+  color: var(--color-text-light);
 }
 
 .contenedor-proyecto {
   max-width: 800px; /* ancho máximo deseado */
   margin: 0 auto; /* lo centra en la pantalla */
   padding: 1rem; /* espacio interior opcional */
+}
+
+:root {
+  --color-bg: #f5f6fa;
+  --color-bg-dark: #23272f;
+  --color-primary: #2e86de;
+  --color-secondary: #f1c40f;
+  --color-accent: #00b894;
+  --color-text: #222f3e;
+  --color-text-light: #fff;
+  --color-card: #fff;
+  --color-card-dark: #2d3436;
+  --shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+  --radius: 18px;
+  --transition: 0.3s cubic-bezier(.4,0,.2,1);
+  --font-main: 'Lato', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  transition: background var(--transition), color var(--transition);
+}
+
+body.dark-mode {
+  background: var(--color-bg-dark);
+  color: var(--color-text-light);
+}
+
+body.dark-mode .lateral {
+  background: var(--color-card-dark);
+}
+
+/* Fondo y sombra del círculo en modo claro */
+.perfil__circulo,
+.proyecto__imagen {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.12);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Fondo y sombra del círculo en modo oscuro */
+body.dark-mode .perfil__circulo,
+body.dark-mode .proyecto__imagen {
+  background: #23272f; /* igual que el fondo oscuro */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.40);
+  border: 1.5px solid #444; /* borde sutil para separar del fondo */
+}
+
+/* Layout principal para alinear lateral y proyectos */
+.main-layout {
+  display: flex;
+  align-items: flex-start;
 }
